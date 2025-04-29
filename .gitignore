@@ -72,3 +72,34 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+
+# ==== Unreal Engine ====
+# ビルド成果物
+Binaries/
+Build/
+
+# 中間生成物／キャッシュ
+Intermediate/
+DerivedDataCache/
+Saved/
+.vscode/        # VSCode を使っているなら
+.vs/            # Visual Studio の一時ファイル
+
+# Unreal が自動生成するプロジェクト設定等
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.userprefs
+
+# モバイル向けキャッシュ
+Content/Streaming/DerivedDataCache/
+
+# プラグイン等のキャッシュ
+Plugins/*/Intermediate/
+Plugins/*/Binaries/
+
+# バイナリアセット（必要に応じて Git LFS で管理）
+*.uasset
+*.umap
